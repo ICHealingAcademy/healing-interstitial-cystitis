@@ -546,7 +546,7 @@ function showResults() {
     tierDesc = "Don't be alarmed if your score is in the negatives. That's not a reflection of you — it's a reflection of the model you were handed. The vast majority of women who come to me land right here, and many of them are now healing or healed.";
     contentHTML = '<p class="sec-label">So where does that leave you?</p>';
     contentHTML += '<p style="font-size:14px;font-weight:300;line-height:1.8;color:var(--mid-grey);margin-bottom:20px;">Doctors are exceptionally good at what they were trained to do: diagnosing and treating acute illness. IC is not that. It is a complex, whole-body condition that requires a depth of investigation, a breadth of testing, and a precision of sequencing that falls entirely outside what conventional medicine — or even most natural health practitioners — was built to deliver. This is not a criticism. It is simply an accurate description of the limits of each model. And understanding those limits is the first step toward finding what actually works..</p>';
-    contentHTML += '<div class="btn-placeholder">&#x1F4CC; Course Start — Coming Soon</div>';
+    
 
   } else if (score <= 25) {
     tierLabel = 'Partial Foundation';
@@ -554,7 +554,7 @@ function showResults() {
     tierDesc = "You've had some solid support, and that's a good thing. But there are gaps, and those gaps are likely a significant part of why you're still not where you want to be. As you work through the course, pay particular attention to the areas where your previous care fell short.";
     contentHTML = '<p class="sec-label" style="margin-bottom:16px;">Your score by area</p>';
     contentHTML += buildGapSummary(true);
-    contentHTML += '<div class="btn-placeholder" style="margin-top:20px;">&#x1F4CC; Course Start — Coming Soon</div>';
+    
 
   } else {
     tierLabel = 'Strong Foundation';
@@ -562,7 +562,7 @@ function showResults() {
     tierDesc = "It looks like your team has done an excellent job of leading you through this complex health challenge. There may still be a few small gaps worth paying attention to. Continue through the intro lessons — even a strong foundation benefits from the complete picture.";
     contentHTML = '<p class="sec-label" style="margin-bottom:16px;">Areas to pay attention to</p>';
     contentHTML += buildGapSummary(false);
-    contentHTML += '<div class="btn-placeholder" style="margin-top:20px;">&#x1F4CC; Course Start — Coming Soon</div>';
+    
   }
 
   document.getElementById('tier-label').textContent = tierLabel;
